@@ -5,6 +5,7 @@ print("2. open savings account")
 account = input(" select 1 or 2 : ")
 print(int(account))
 account = int(account)
+charges_per_account = {1: 0.01, 2: 0.02}
 if account == 1:
     print("opening checking account")
     a = int(input("please enter amount to deposit: "))
@@ -16,7 +17,9 @@ if account == 1:
         a=a+a1
         print(a)
     deposited_amount = a
-    print(str(deposited_amount) + " is deposited into your checking account")
+    charges = deposited_amount * charges_per_account[account]
+    final_amount = deposited_amount - charges
+    print(str(final_amount) + " is deposited into your checking account")
 else:
     print("opening savings account")
     c = int(input("please enter amount to deposit: "))
@@ -28,5 +31,7 @@ else:
         c = c + c1
         print(c)
     deposited_amount1 = c
-    print(str(deposited_amount1) + " is deposited into your savings account")
+    charges = deposited_amount1 * charges_per_account[account]
+    final_amount1 = deposited_amount1 - charges
+    print(str(final_amount1) + " is deposited into your savings account")
 
