@@ -65,9 +65,11 @@ def message(msg):
             out = out + word + " "
     return out
 
+
 m = input("enter your message: ")
-result = message(m)
-print(result)
+#result = message(m)
+#print(result)
+print(message(m))
 
 
 
