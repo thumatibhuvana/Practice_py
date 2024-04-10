@@ -52,11 +52,22 @@ print(f'count of even: {even_count}')
 print(f'count of odd: {odd_count}')
 
 
+# Emoji conversion pgm using Functions
+def message(msg):
+    words = msg.split(' ')
+    print(words)
+    out = ""
+    emojis = {":)": "😊", ":(": "😡😭💔", "$": "💲"}
+    for word in words:
+        if word in emojis:
+            out = out + emojis[word] + " "
+        else:
+            out = out + word + " "
+    return out
 
-
-
-
-
+m = input("enter your message: ")
+result = message(m)
+print(result)
 
 
 
