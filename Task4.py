@@ -53,18 +53,6 @@ print(f'count of odd: {odd_count}')
 
 
 # Emoji conversion pgm using Functions
-msg = input("enter your message: ")
-words = msg.split(' ')
-print(words)
-out = ""
-emojis = {":)": "😊", ":(": "😡😭💔", "$": "💲"}
-for word in words:
-    if word in emojis:
-        out = out+emojis[word]+" "
-    else:
-        out = out+word+" "
-print(out)
-
 def message(msg):
     words = msg.split(' ')
     print(words)
