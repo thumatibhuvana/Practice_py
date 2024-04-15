@@ -14,9 +14,19 @@ print(result)
 from grade_calculator import grade_of_a_student
 
 import sys
-print("Welcome to grade calculator")
-name = input("enter your name: ")
-marks = [90,90,70,80,90,90]
-grade=grade_of_a_student(marks)
-print(name + " your grade is: " + grade)
+with open('text1.txt', 'a') as af:
+        print("Welcome to grade calculator")
+        name = input("enter your name: ")
+        marks = [90,90,90,90,90,90]
+        grade=grade_of_a_student(marks)
+        af.write(name + " your grade is: " + grade)
+        af.write("\n")
+        print(af)
+
+
+with open('text1.txt', 'r') as rf:
+        r = rf.read()
+        print(r)
+
+
 
