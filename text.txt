@@ -1,0 +1,5 @@
+Welcome to Task7
+student name : John
+student age : 17
+student grade : 11.5
+student subjects : ['Math', 'Science', 'English']
