@@ -1,4 +1,4 @@
-'''def hello_function(greeting):
+def hello_function(greeting):
     return greeting
 
 
@@ -38,7 +38,7 @@ def details(*name, **age):
     return "{},{}".format(name, age)
 
 
-print(details('Bhuvan', 20, name="Hanu", age=25))'''
+print(details('Bhuvan', 20, name="Hanu", age=25))
 
 
 def action(x,y,z):
@@ -109,5 +109,4 @@ name = input("enter your name: ")
 marks = [50,60,70,80,90,90]
 grade=grade_of_a_student(marks)
 print(name + " your grade is: " + grade)
-
 
